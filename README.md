@@ -75,9 +75,3 @@ These insights are generated using DAX ranking logic.
 
 ---
 
-#  Dashboard Preview
-
-(Add your screenshot as `docs/dashboard-preview.png`)
-
-```md
-![Dashboard](docs/dashboard-preview.png)
