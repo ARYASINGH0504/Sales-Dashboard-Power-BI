@@ -1,4 +1,4 @@
-# AdventureWorks — Power BI Sales & Returns Dashboard
+# Power BI Sales & Returns Dashboard
 
 **Author:** Arya Singh  
 **Project:** Executive dashboard for AdventureWorks — Sales + Returns (2020–2022)
