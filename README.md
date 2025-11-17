@@ -1,38 +1,83 @@
-# Power BI Sales & Returns Dashboard
+#  AdventureWorks Sales & Returns Dashboard (Power BI)
 
-**Author:** Arya Singh  
-**Project:** Executive dashboard for AdventureWorks — Sales + Returns (2020–2022)
+A comprehensive **Sales & Returns Analytics Dashboard** built using the AdventureWorks dataset.  
+This project demonstrates professional-level **Business Intelligence**, **data modeling**, **DAX development**, and **interactive reporting** using **Power BI**.
 
-## Overview
-This repository contains:
-- Power BI report file (`pbix/AdventureWorksReport.pbix`)
-- Raw lookup and fact CSVs (`data/`)
-- Model diagram and documentation (`docs/`)
-- DAX measures and explanations (`dax/`)
+The dashboard enables end-to-end analysis of revenue trends, profitability, order patterns, product performance, and return behavior using a clean and scalable **star schema model**.
 
-## Repo structure
-(briefly list structure or link to the project root)
+---
 
-## How to open the report
-1. Download `pbix/AdventureWorksReport.pbix` (large file — stored with Git LFS).
-2. Open in Power BI Desktop (recommended version: Power BI Desktop >= Feb 2024).
-3. The model diagram is in `docs/model-diagram.png`.
+#  Features of the Dashboard
 
-## Data model
-Star schema with:
-- Fact tables: `FactSales`, `FactReturns`
-- Dimension tables: `DimDate`, `DimCustomer`, `DimProduct`, `DimSubcategory`, `DimCategory`, `DimTerritory`
+###  **1. Executive KPI Cards**
+Dynamic KPIs that update based on filters/slicers:
+- Revenue
+- Profit
+- Total Orders
+- Return Rate
 
-## Key DAX measures
-See `/dax/measures.md` for definitions: Total Sales, Return Rate, YOY Sales, Average Revenue per Customer, etc.
+These KPIs offer an instant overview of business performance.
 
-## How to contribute
-1. Fork repo → create a feature branch `feature/xxxx` → commit → open PR.
-2. For large .pbix changes, include a short summary of visuals changed in the PR description.
+---
 
-## Privacy & Data
-This repo contains sample / anonymised data. Do not commit any PII or production secrets.
+###  **2. Revenue Trending**
+A time-series line chart showing:
+- Month-by-month revenue pattern  
+- Long-term trendline  
+- Seasonal fluctuations or growth behavior  
 
-## License
-[Choose a license: MIT / Apache-2.0 / etc.]. See `LICENSE`.
+This helps identify performance changes across multiple years.
 
+---
+
+###  **3. Orders by Category**
+Bar chart showing order distribution across product categories:
+- Accessories  
+- Bikes  
+- Clothing  
+
+Useful for understanding category contribution to total sales.
+
+---
+
+###  **4. Top 10 Products Table**
+A ranked table with:
+- Product name  
+- Orders  
+- Revenue  
+- Return %  
+- Conditional formatting to highlight high-return products  
+
+This enables deep product-level performance evaluation.
+
+---
+
+###  **5. Monthly Insights**
+Cards showing:
+- Monthly revenue  
+- Monthly orders  
+- Monthly returns  
+
+Each card displays month-over-month change using:
+- Up/down indicators  
+- Percentage difference  
+
+Great for tracking short-term fluctuations.
+
+---
+
+###  **6. Product Type Highlights**
+Automatically identifies:
+- **Most ordered product type**  
+- **Most returned product type**  
+
+These insights are generated using DAX ranking logic.
+
+---
+
+#  Dashboard Preview
+
+(Add your screenshot as `docs/dashboard-preview.png`)
+
+```md
+![Dashboard](docs/dashboard-preview.png)
